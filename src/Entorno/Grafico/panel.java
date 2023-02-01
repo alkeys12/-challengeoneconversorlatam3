@@ -167,9 +167,6 @@ public class panel extends JPanel {
         //boton ver se trata del boton que realiza el proceso de cambio de divisas
         ver.addActionListener(e -> {
             cambioDivisa camv = new cambioDivisa();
-            System.out.println(tipo1);
-            System.out.println(tipo2.replace(".", ""));
-            System.out.println(cant1.getText());
             float cambioDivisas = camv.getCambio(Float.valueOf(cant1.getText()), tipo1, tipo2.replace(".", ""));
             setCant2(String.valueOf(cambioDivisas));
         });
